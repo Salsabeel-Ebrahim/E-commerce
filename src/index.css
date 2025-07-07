@@ -1,0 +1,65 @@
+@import '@fontsource-variable/inter';
+
+@import "tailwindcss";
+
+
+
+/* @utility container{
+    margin : auto;
+      
+     @media(width >= 80rem ){
+      max-width : 70rem ;
+    }
+}  */
+
+@utility container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;   
+  padding-right: 1rem;
+
+  @media (min-width: 640px) {
+    padding-left: 1.5rem;  
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 75rem; 
+  }
+}
+
+@theme{
+    --color-mainColor : #0aad0a;
+}
+
+@layer base {
+  body {
+   
+    font-family: 'InterVariable', sans-serif;
+  }
+}
+    
+@layer components{
+    .input{
+        @apply focus:outline-none px-2 bg-white rounded-md grow py-1 border border-mainColor focus:ring-2 focus:ring-green-400 
+    }
+    .btn{
+        
+ @apply px-4 py-1.5 rounded-md text-white bg-mainColor shadow-md hover:bg-green-700 transition-all duration-300
+    }
+}
+::selection{
+   background-color:  #50ce50d0;
+}
+
+.Toastify__toast {
+  padding: 14px 20px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  font-family: 'Cairo', sans-serif !important;
+  border-radius: 12px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1) !important;
+  letter-spacing: 0.5px;
+  align-items: center;
+}
