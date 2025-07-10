@@ -2,6 +2,18 @@
   "name": "freshcart",
   "private": true,
   "version": "0.0.0",
+
+  "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist -r https://github.com/Salsabeel-Ebrahim/E-commerce.git"
+
+
+  
+},
+
   "homepage": "https://Salsabeel-Ebrahim.github.io/E-commerce",
 
   "type": "module",
