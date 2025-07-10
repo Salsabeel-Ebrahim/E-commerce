@@ -1,51 +1,72 @@
-🛍️ E-Commerce Platform
-🎯 Overview
-This is a modern, full-featured e-commerce platform built using the latest web technologies. It offers a smooth shopping experience, secure user authentication, product management, and an interactive shopping cart — all wrapped in a fast and responsive UI designed with Tailwind CSS.
+# 🛍️ E-Commerce Platform
 
-✨ Features
-🔐 Authentication
-Secure login using email and password.
-Form validation with Formik and Yup.
-JWT token stored in localStorage with auto-logout after inactivity.
-🖼️ Product Display
-Grid-based product layout with images and pricing.
-Dedicated product details page.
-🛒 Shopping Cart
-Add/remove products from the cart.
-Modify product quantity.
-View total price and item count.
-🧭 Navigation
-Smooth client-side routing using React Router.
-Pages: Home, Products, Product Details, Cart, Login, etc.
-🎨 UI & UX
-Responsive design using Tailwind CSS.
-Clean and modern interface.
-📡 API Integration
-Axios for fetching data from RESTful APIs.
-Well-structured and modular HTTP requests.
-⚙️ Tech Stack
-Technology	Purpose
-React	Front-end UI development
-Tailwind CSS	Styling and responsive design
-Vite	Fast development and build tool
-React Router	Client-side routing
-Formik + Yup	Form handling and validation
-Axios	HTTP requests
-React Hot Toast	Toast notifications
-React Helmet	Dynamic page titles (SEO-friendly)
-🔮 Future Enhancements
-Payment integration (Stripe, PayPal).
-Admin dashboard for managing users and products.
-Product reviews and ratings.
-User roles and permission system.
-Email notifications for order updates.
-🚀 Live Demo
+## 🎯 Overview
+
+A modern, full-featured e-commerce platform built with the latest web technologies. It provides a smooth shopping experience with secure authentication, dynamic product management, an interactive shopping cart, and fast, responsive UI using **Tailwind CSS**.
+
+---
+
+## ✨ Features
+
+### 🔐 Authentication
+
+* Secure login with email and password
+* Form validation using **Formik** and **Yup**
+* JWT stored in `localStorage` with auto-logout after inactivity
+
+### 🖼️ Product Display
+
+* Responsive, grid-based product layout with images, names, and prices
+* Dedicated **Product Details** page
+
+### 🛒 Shopping Cart
+
+* Add and remove products from the cart
+* Update product quantity
+* View total price and item count
+
+### 🧭 Navigation
+
+* Smooth client-side routing using **React Router**
+* Core Pages: `Home`, `Products`, `Product Details`, `Cart`, `Login`, etc.
+
+### 📡 API Integration
+
+* **Axios** for communicating with RESTful APIs
+* Modular and reusable HTTP request logic
+* **TanStack Query** (React Query) for data fetching, caching, and revalidation
+
+### 🎨 UI & UX
+
+* Fully responsive design built with **Tailwind CSS**
+* Clean, modern, and accessible interface
+* Animated elements using **Lottie** for a polished user experience
+* Toast notifications with **React Hot Toast**
+* SEO-friendly dynamic page titles via **React Helmet**
+
+---
+
+## ⚙️ Tech Stack
+
+| Technology      | Purpose                       |
+| --------------- | ----------------------------- |
+| React           | Front-end UI development      |
+| Tailwind CSS    | Styling and responsive design |
+| Vite            | Fast development & build tool |
+| React Router    | Client-side routing           |
+| Formik + Yup    | Form management & validation  |
+| Axios           | HTTP requests                 |
+| TanStack Query  | Data fetching and caching     |
+| Lottie          | Rich animations               |
+| React Hot Toast | User feedback via toasts      |
 
 
-🗂️ Source Code
+## 🚀 Live Demo: https://salsabeel-ebrahim.github.io/E-commerce/
 
 
-🧑‍💻 Author
-Developed by Salsabeel
 
-Feel free to clone, fork, or contribute to this project!
+## 🧑‍💻 Author
+
+Developed with ❤️ by **Salsabeel**
+
+> Feel free to fork, clone, or contribute to improve the platform!

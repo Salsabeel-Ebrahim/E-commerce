@@ -30,6 +30,8 @@ async function handleSubmit(values) {
   const { data } = await axios.request(options);
 if (data.statusMsg === "success") {
  toast.success(data.message);
+ localStorage.setItem("resetVerifiedEmail", values.email);
+
   setTimeout(() => {
     navigate("/VerifyCode");
   }, 1500);
@@ -52,7 +54,7 @@ onSubmit : handleSubmit
 
 return (<>
 
-   <div className="min-h-[70vh] flex items-center justify-center p-4">
+   <div className=" flex items-center justify-center  mt-[66px] px-4 py-6">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-md overflow-hidden">
         <div className=" p-6 text-center bg-indigo-600">
  

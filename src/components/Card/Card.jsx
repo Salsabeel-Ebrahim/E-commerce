@@ -14,10 +14,10 @@ export default function Card({productInfo}) {
   return (
  
 <div className='rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-300'>
-  <div className="relative group overflow-hidden">
-    <img src={imageCover} alt={title}  loading="lazy" className="w-full  transition-transform duration-500 group-hover:scale-105" />
+  <div className="relative group overflow-hidden " tabIndex={0}>
+    <img src={imageCover} alt={title}  loading="lazy" className="w-full  transition-transform duration-500 group-hover:scale-105 group-focus:scale-104" />
   
-    <div className="absolute inset-0 bg-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-3">
+    <div className="absolute inset-0 bg-transparent opacity-0  group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-3">
     <div className="flex gap-2 transform translate-y-110 group-hover:translate-y-0 transition-all duration-400 ">
   <Link className="bg-white text-mainColor hover:bg-mainColor hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110">
     <FontAwesomeIcon icon={faCartShopping} onClick={

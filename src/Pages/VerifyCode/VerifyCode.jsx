@@ -1,10 +1,5 @@
-// import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
- import axios from 'axios';
+import axios from 'axios';
 import { useFormik } from 'formik';
-// import { Link, useNavigate } from 'react-router-dom';
-
 import * as yup from "yup"
 import { toast } from "react-toastify";
 import { Navigate, useNavigate } from 'react-router-dom';
@@ -25,11 +20,13 @@ try{
     const {data} = await axios.request(options)
     console.log(data)
        toast.success("Code verified successfully");
-       localStorage.setItem("resetVerifiedEmail", values.email);
-    navigate("/Resetpassword");
+   navigate("/Resetpassword");
 
-}catch(error){
-    toast.error(error.response?.data?.message || "Invalid or expired code");
+}
+catch(error){
+    // toast.error(error.response?.data?.message || "Invalid or expired code");
+     console.log(error.response?.data?.message);
+    navigate('/Login')
 }  }
 
      const formik = useFormik({
@@ -42,7 +39,7 @@ onSubmit : verification
       
   return (
     <>
-      <div className="min-h-[70vh] flex items-center justify-center p-4">
+      <div className=" flex items-center justify-center  mt-[66px] px-4 py-8">
           <div className="w-full max-w-md bg-white rounded-2xl shadow-md overflow-hidden">
             <div className=" p-6 text-center bg-mainColor">
      

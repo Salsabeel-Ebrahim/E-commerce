@@ -2,15 +2,15 @@
 
 @import "tailwindcss";
 
+@tailwind utilities;
 
 
-/* @utility container{
-    margin : auto;
-      
-     @media(width >= 80rem ){
-      max-width : 70rem ;
-    }
-}  */
+ body{
+  font-size: 1rem; 
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+ }
 
 @utility container {
   width: 100%;
@@ -18,14 +18,21 @@
   margin-right: auto;
   padding-left: 1rem;   
   padding-right: 1rem;
+  margin-inline: 1rem;
+  margin-inline: auto; 
 
-  @media (min-width: 640px) {
+ @media (min-width: 640px) {
     padding-left: 1.5rem;  
     padding-right: 1.5rem;
+    margin-inline: 1.5rem;
+  }
+   @media (min-width: 768px) {
+    margin-inline: 2rem;
   }
 
   @media (min-width: 1280px) {
     max-width: 75rem; 
+      margin-inline: auto; 
   }
 }
 

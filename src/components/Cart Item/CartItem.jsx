@@ -24,7 +24,7 @@ export default function CartItem({itemInfo}) {
       </div>
 
       <div className="flex flex-col gap-1 text-gray-800 text-center md:text-start">
-      <h2 className="text-lg font-semibold">{title }</h2>
+      <h2 className="text-lg font-semibold max- w-[200px]">{title }</h2>
       <span className="text-sm">Price: <span className="font-medium">{price} L.E</span></span>
         <span className="text-sm text-yellow-500 flex items-center gap-1 justify-center md:justify-start">
           Rating: {ratingsAverage}

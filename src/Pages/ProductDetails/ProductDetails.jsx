@@ -37,17 +37,16 @@ getRelatedProduct(data.data.category._id)
    }
   }
 
-  useEffect(() => {
-    getSpecificProduct()
-  }, [id])
-
+ useEffect(()=>{
+  getSpecificProduct()
+ }, [id])
 
   async function getRelatedProduct(category_id) {
    
    try{
-    const { data } = await axios.get(`https://ecommerce.routemisr.com/api/v1/products?category[in]=${category_id}`)
-setRelated(data.data)
+  const{data} = await axios.get(`https://ecommerce.routemisr.com/api/v1/products?category[in]=${category_id}`)
 
+ setRelated(data.data)
    }catch(error){
     console.log(error);
     
@@ -59,19 +58,19 @@ setRelated(data.data)
 
     {
       product?  
-     <div className="container mx-auto p-6 shadow-lg rounded-2xl overflow-hidden px-6 py-6 my-6">
+     <div className="container mt-[72px] mb-8 mx-auto p-6 shadow-lg rounded-2xl overflow-hidden px-6  my-6">
   <div className="flex flex-col md:flex-row gap-10 bg-white ">
     
-    {/* Left Column - Images */}
+  
     <div className="md:w-1/2 space-y-6">
-      {/* Main Image */}
+    
       <img   loading="lazy" 
         src={ activeImage || product?.imageCover} 
         alt={product?.title} 
         className="rounded-2xl w-full max-h-[300px] object-contain bg-gray-50 p-4 shadow-sm" 
       />
 
-      {/* Swiper */}
+     
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: 2000, disableOnInteraction: false }}
@@ -95,7 +94,7 @@ setActiveImage(product?.images[swiper.realIndex])
       </Swiper>
     </div>
 
-    {/* Right Column - Details */}
+   
     <div className="md:w-1/2 flex flex-col gap-6">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2 text-yellow-500">

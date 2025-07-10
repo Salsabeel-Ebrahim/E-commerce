@@ -20,7 +20,7 @@ const {imageCover , title , price , ratingsAverage , category , id} = itemInfo
 
      
       <div className="rounded-lg border-[2px] overflow-hidden border-mainColor w-32 h-32">
-        <img src={imageCover} alt="Shawl"  loading="lazy" className="w-full h-full object-cover" />
+        <img src={imageCover} alt={title}  loading="lazy" className="w-full h-full object-cover" />
       </div>
 
       <div className="flex flex-col gap-1 text-gray-800 text-center md:text-start">

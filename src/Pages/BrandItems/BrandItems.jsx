@@ -27,7 +27,7 @@ useEffect(() => {
     specificBrand  ? 
     specificBrand .length === 0 ?
         ( navigate("/NotFound"))  : 
-           ( <div className=" container py-8 grid grid-cols-1 md:grid-cols-3 
+           ( <div className=" container pb-8 mt-[85px] grid grid-cols-1 md:grid-cols-3 
            lg:grid-cols-5 gap-4">
             {
                specificBrand ?.map((item)=>(

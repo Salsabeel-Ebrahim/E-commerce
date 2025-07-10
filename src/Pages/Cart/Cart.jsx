@@ -3,16 +3,17 @@ import CartItem from '../../components/Cart Item/CartItem'
 import { CartContext } from '../../Context/Cart.context'
 import Loading from '../../components/Loading/Loading'
 import { Link } from 'react-router-dom';
+import useOnline from '../../Hooks/useOnline';
 
 export default function Cart() {
  const {getAllCart , cartInfo , clearCart } = useContext(CartContext)
-     
+       const online= useOnline()
  useEffect(()=>{
       getAllCart()     } , [])
   return (
     <>  
  {  cartInfo? 
-    <div className="container py-4">
+    <div className="container pb-8 pt-[70px] ">
      { cartInfo.numOfCartItems===0 ?
       <div className="container min-h-[70vh] py-8 flex items-center ">
    <div className="border-2 border-mainColor text-center py-12 px-4 rounded-lg w-full">
@@ -43,10 +44,20 @@ export default function Cart() {
     </span>
   </div>
 
+<div className="flex gap-3">
+<Link to="/Payment">
+{online? <button className="btn bg-blue-600 hover:bg-blue-700  font-semibold px-5 py-2 ">
+    CHECKOUT
+  </button> : null }
+ 
+</Link>
+ 
   <button className="btn bg-red-600 hover:bg-red-700  font-semibold px-5 py-2 "
   onClick={clearCart}>
     CLEAR CART
   </button>
+</div>
+
 </div>
 
 )}

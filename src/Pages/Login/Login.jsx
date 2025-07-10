@@ -78,7 +78,7 @@ onSubmit : submit
  <div className="Login min-h-screen py-10  flex justify-center items-center">
  <div className="container gap-5 grid lg:grid-cols-2 lg:gap-12">
  <div className="relative  flex flex-col justify-center items-center min-h-90">
- <Lottie animationData={animation} loop={true}  style={{ width: "90%", height: "23rem" }} />
+ <Lottie animationData={animation} loop={false}  style={{ width: "90%", height: "23rem" }} />
 </div>
 
 
@@ -95,25 +95,41 @@ onSubmit : submit
 }
 
  </div>
-     
- <div className="my-2 relative min-h-[80px]">
- <input type={passtype? "password" : "text" } className='input w-full ' value={formik.values.password}
-  onChange={formik.handleChange} onBlur={formik.handleBlur} name='password' 
-  placeholder="Enter your password" />
-     {
-  formik.errors.password && formik.touched.password ?  <p className='text-red-500 mb-4 pl-1 mt-2'>{formik.errors.password}</p> : ""
-}
-<FontAwesomeIcon icon={faEye}  className='absolute top-[13%] -translate-y-[13%] right-4 cursor-pointer'
- onClick={()=>{ setPasstype(!passtype)}}/>
+ 
+<div className="my-2 relative">
+  <div className="relative">
+    <input
+      type={passtype ? "password" : "text"}
+      className='input w-full pr-10' 
+      value={formik.values.password}
+      onChange={formik.handleChange}
+      onBlur={formik.handleBlur}
+      name='password'
+      placeholder="Enter your password"
+    />
+    <FontAwesomeIcon
+      icon={faEye}
+      className='absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer text-gray-500'
+      onClick={() => setPasstype(!passtype)}
+    />
   </div>
-<Link to="/Forgotpassword" className='text-blue-600 underline'>Forgot your password?</Link>
+  
+  {
+    formik.errors.password && formik.touched.password && (
+      <p className='text-red-500 text-sm pl-1 mt-1'>{formik.errors.password}</p>
+    )
+  }
+</div>
+
+<Link to="/Forgotpassword" className='text-blue-600 underline text-sm'>Forgot your password?</Link>
+
 <div className="my-2">
   <button type='submit' disabled={loading} className='btn w-full font-semibold'>
-{ loading   ? <FontAwesomeIcon icon={faSpinner} /> : "Login" }
-   </button>
-  </div> 
-   
-  </form>
+    {loading ? <FontAwesomeIcon icon={faSpinner} /> : "Login"}
+  </button>
+</div>
+
+ </form>
 </div>
  </div>
     </>

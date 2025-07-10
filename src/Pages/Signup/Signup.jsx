@@ -80,8 +80,8 @@ navigate("/login")
   
   return (
     <>
-      <main className="py-10">
-        <div className="container grid lg:grid-cols-2 lg:gap-12 ">
+      <main className="pt-[90px] pb-10">
+        <div className="container grid lg:grid-cols-2 lg:gap-12  ">
           <div className="left-side space-y-6 ">
             <div className="welcome-message ">
               <h2 className="text-4xl font-bold"> 
@@ -126,7 +126,7 @@ navigate("/login")
    </ul>
             </div>
 
-            <div className="review p-4 rounded-xl shadow-md">
+            <div className="review py-4 rounded-xl shadow-md mb-8 md:mb-0 px-5 sm:px-4">
       <div className="flex gap-3 items-center mb-3">
       <img src={review} alt="sarah johson image" className="size-12 rounded-full" />
         <div>

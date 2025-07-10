@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Loading from '../../components/Loading/Loading'
 import Card from '../../components/Card/Card'
@@ -32,7 +32,7 @@ async function getRelatedCategories(){
   relatedCategory ? 
   relatedCategory.length === 0 ?
       ( navigate("/NotFound"))  : 
-         ( <div className=" container py-8 grid grid-cols-1 md:grid-cols-3 
+         ( <div className=" container pb-8 mt-[85px] grid grid-cols-1 md:grid-cols-3 
          lg:grid-cols-5 gap-4">
           {
              relatedCategory?.map((item)=>(

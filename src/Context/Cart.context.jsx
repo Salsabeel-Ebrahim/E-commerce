@@ -9,7 +9,9 @@ export default function CartProvider({children}){
 
   const { token } = useContext(TokenContext);
   const [cartInfo , setCartInfo] = useState(null)
-   async function addToCart(productId){
+console.log("CartProvider Token:", token);
+
+  async function addToCart(productId){
     const loading = toast.loading("loading")
        try {
         const options = {
