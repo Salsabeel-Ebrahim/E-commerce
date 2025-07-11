@@ -95,7 +95,7 @@ navigate("/login")
             <div className="features">
               <ul className="*:flex *:items-center *:gap-3 space-y-4">
 <li className="">
-  <div className=" icon size-6 text-[14px]  rounded-full bg-green-200 p-2 md:text-xl md:p-[21px] flex justify-center items-center text-green-600">
+  <div className=" icon size-6 text-[14px]  rounded-full bg-green-200 p-[15px] md:p-2 md:text-xl md:p-[21px] flex justify-center items-center text-green-600">
     <FontAwesomeIcon className="" icon={faStar} />
   </div>
   <div className="content">
@@ -109,7 +109,7 @@ navigate("/login")
 </li>
 
 <li className="">
-   <div className="icon size-6 text-[14px] rounded-full bg-green-200 p-2  md:text-xl md:p-[21px] flex justify-center items-center text-green-600">
+   <div className="icon size-6 text-[14px] rounded-full bg-green-200 p-[15px] md:p-2  md:text-xl md:p-[21px] flex justify-center items-center text-green-600">
     <FontAwesomeIcon className="" icon={faTruckFast} />
   </div>
   <div className="content">
@@ -119,7 +119,7 @@ navigate("/login")
 </li>
 
 <li className="">
-     <div className="icon size-6 text-[14px] rounded-full bg-green-200 p-2 md:text-xl md:p-[21px] flex justify-center items-center text-green-600">
+     <div className="icon size-6 text-[14px] rounded-full bg-green-200 p-[15px] md:p-2 md:text-xl md:p-[21px] flex justify-center items-center text-green-600">
     <FontAwesomeIcon className="" icon={faShieldHalved} />
   </div>
  
