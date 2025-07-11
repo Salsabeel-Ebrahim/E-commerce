@@ -49,18 +49,22 @@ export default function Navbar() {
                 <div className="absolute top-full left-0 w-screen bg-white shadow-md z-40 py-2 space-y-1" id="mobile-menu">
                   {/* Top icons and auth */}
                   <div className="container flex justify-between px-8 ">
-                    <div className="social-icons items-center flex gap-3 mt-4">
+                    {
+                      token &&
+                          <div className="social-icons items-center flex gap-3 mt-4">
                       <FontAwesomeIcon icon={faFacebook} className="text-xl text-[#1877F2] hover:translate-y-[-4px] transition-transform duration-300" />
                       <FontAwesomeIcon icon={faInstagram} className="text-xl text-[#E1306C] hover:translate-y-[-4px] transition-transform duration-300" />
                       <FontAwesomeIcon icon={faTwitter} className="text-xl text-[#1DA1F2] hover:translate-y-[-4px] transition-transform duration-300" />
                       <FontAwesomeIcon icon={faLinkedin} className="text-xl text-[#0077B5] hover:translate-y-[-4px] transition-transform duration-300" />
                     </div>
+                    }
+                
 
                     <div className="items-center flex gap-3">
                       {!token && (
                         <div>
-                          <NavLink to="/signup" className="rounded-md px-1 py-2 text-sm font-medium">Signup</NavLink>
-                          <NavLink to="/login" className="rounded-md px-1 py-2 text-sm font-medium">Login</NavLink>
+                          <NavLink to="/signup" className="block border-b border-gray-200 px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-100 hover:text-mainColor transition duration-200">Signup</NavLink>
+                          <NavLink to="/login" className="block border-b border-gray-200 px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-100 hover:text-mainColor transition duration-200">Login</NavLink>
                         </div>
                       )}
 
@@ -90,14 +94,17 @@ export default function Navbar() {
                     </div>
                   </div>
 
-                  {/* Links */}
-                  <div className="w-full">
-                    <NavLink to="/" className="block border-b border-gray-200 px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-100 hover:text-mainColor transition duration-200">Home</NavLink>
+          
+              
+          
+           <div className="w-full">
+                    {token &&    <>  <NavLink to="/" className="block border-b border-gray-200 px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-100 hover:text-mainColor transition duration-200">Home</NavLink>
                     <NavLink to="/Products" className="block border-b border-gray-200 px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-100 hover:text-mainColor transition duration-200">Products</NavLink>
                     <NavLink to="/Categories" className="block border-b border-gray-200 px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-100 hover:text-mainColor transition duration-200">Categories</NavLink>
                     <NavLink to="/Brands" className="block border-b border-gray-200 px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-100 hover:text-mainColor transition duration-200">Brands</NavLink>
                     <NavLink to="/allorders" className="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-100 hover:text-mainColor transition duration-200">Orders</NavLink>
-                  </div>
+               </> }
+                 </div>
                 </div>
               )}
             </div>
