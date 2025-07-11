@@ -95,12 +95,12 @@ navigate("/login")
             <div className="features">
               <ul className="*:flex *:items-center *:gap-3 space-y-4">
 <li className="">
- 
-  <div className="content">
- <div className="flex gap-3">
-   <div className=" icon size-6 rounded-full bg-green-200 p-2 md:p-0 md:text-xl flex justify-center items-center text-green-600">
+  <div className=" icon size-6 text-[14px]  rounded-full bg-green-200 p-2 md:p-0 md:text-xl flex justify-center items-center text-green-600">
     <FontAwesomeIcon className="" icon={faStar} />
   </div>
+  <div className="content">
+ <div className="flex gap-3">
+   
     <h3 className="font-semibold">Premium Quality</h3>
    
   </div>
@@ -109,28 +109,23 @@ navigate("/login")
 </li>
 
 <li className="">
-  
-  <div className="content">
-    <div className="flex gap-3">
-    <div className="icon size-6 rounded-full bg-green-200 p-2 md:p-0  md:text-xl flex justify-center items-center text-green-600">
+   <div className="icon size-6 text-[14px] rounded-full bg-green-200 p-2 md:p-0  md:text-xl flex justify-center items-center text-green-600">
     <FontAwesomeIcon className="" icon={faTruckFast} />
   </div>
-    <h3 className="font-semibold">Fast Delivery</h3> </div>
+  <div className="content">
+    <h3 className="font-semibold">Fast Delivery</h3> 
     <p className="text-gray-600">Same day delivery available in most areas</p>
   </div>
 </li>
 
 <li className="">
- 
-  <div className="content">
-    <div className="flex gap-3">
-         <div className="icon size-6 rounded-full bg-green-200 p-2 md:p-0 md:text-xl flex justify-center items-center text-green-600">
+     <div className="icon size-6 text-[14px] rounded-full bg-green-200 p-2 md:p-0 md:text-xl flex justify-center items-center text-green-600">
     <FontAwesomeIcon className="" icon={faShieldHalved} />
   </div>
-    <h3 className="font-semibold">Secure Shopping</h3>
-    </div>
-    
-    <p className="text-gray-600">Your data and payments are completely secure</p>
+ 
+  <div className="content">
+ <h3 className="font-semibold">Secure Shopping</h3>
+  <p className="text-gray-600">Your data and payments are completely secure</p>
   </div>
 </li>
    </ul>
