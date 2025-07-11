@@ -1,6 +1,6 @@
-# 🛍️ E-Commerce Platform
+# E-Commerce Platform
 
-## 🎯 Overview
+##  Overview
 
 A modern, full-featured e-commerce platform built with the latest web technologies. It provides a smooth shopping experience with secure authentication, dynamic product management, an interactive shopping cart, and fast, responsive UI using **Tailwind CSS**.
 
@@ -42,9 +42,9 @@ A modern, full-featured e-commerce platform built with the latest web technologi
 * Clean, modern, and accessible interface
 * Animated elements using **Lottie** for a polished user experience
 * Toast notifications with **React Hot Toast**
-* SEO-friendly dynamic page titles via **React Helmet**
 
----
+
+
 
 ## ⚙️ Tech Stack
 
@@ -61,7 +61,7 @@ A modern, full-featured e-commerce platform built with the latest web technologi
 | React Hot Toast | User feedback via toasts      |
 
 
-## 🚀 Live Demo: https://salsabeel-ebrahim.github.io/E-commerce/
+##  Live Demo: [https://salsabeel-ebrahim.github.io/E-commerce/](https://salsabeel-ebrahim.github.io/E-commerce/)
 
 
 
