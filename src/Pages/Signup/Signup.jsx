@@ -95,36 +95,41 @@ navigate("/login")
             <div className="features">
               <ul className="*:flex *:items-center *:gap-3 space-y-4">
 <li className="">
-  <div className=" none md:block icon size-12 rounded-full bg-green-200 p-2 md:p-0 md:text-xl flex justify-center items-center text-green-600">
-    <FontAwesomeIcon className="" icon={faStar} />
-  </div>
+ 
   <div className="content">
- <div className="">
-       <h3 className="font-semibold">Premium Quality</h3>
-     <div className="md:none icon text-[14px] rounded-full bg-green-200 p-2 md:p-0 md:text-xl flex justify-center items-center text-green-600">
+ <div className="flex gap-3">
+   <div className=" icon size-6 rounded-full bg-green-200 p-2 md:p-0 md:text-xl flex justify-center items-center text-green-600">
     <FontAwesomeIcon className="" icon={faStar} />
   </div>
+    <h3 className="font-semibold">Premium Quality</h3>
+   
   </div>
     <p className="text-gray-600">Premium quality sourced directly to you</p>
   </div>
 </li>
 
 <li className="">
-  <div className="icon size-12 rounded-full bg-green-200 p-2 md:p-0  md:text-xl flex justify-center items-center text-green-600">
+  
+  <div className="content">
+    <div className="flex gap-3">
+    <div className="icon size-6 rounded-full bg-green-200 p-2 md:p-0  md:text-xl flex justify-center items-center text-green-600">
     <FontAwesomeIcon className="" icon={faTruckFast} />
   </div>
-  <div className="content">
-    <h3 className="font-semibold">Fast Delivery</h3>
+    <h3 className="font-semibold">Fast Delivery</h3> </div>
     <p className="text-gray-600">Same day delivery available in most areas</p>
   </div>
 </li>
 
 <li className="">
-  <div className="icon size-12 rounded-full bg-green-200 p-2 md:p-0 md:text-xl flex justify-center items-center text-green-600">
+ 
+  <div className="content">
+    <div className="flex gap-3">
+         <div className="icon size-6 rounded-full bg-green-200 p-2 md:p-0 md:text-xl flex justify-center items-center text-green-600">
     <FontAwesomeIcon className="" icon={faShieldHalved} />
   </div>
-  <div className="content">
     <h3 className="font-semibold">Secure Shopping</h3>
+    </div>
+    
     <p className="text-gray-600">Your data and payments are completely secure</p>
   </div>
 </li>
@@ -133,7 +138,7 @@ navigate("/login")
 
             <div className="review py-4 rounded-xl shadow-md mb-8 md:mb-0 px-5 sm:px-4">
       <div className="flex gap-3 items-center mb-3">
-      <img src={review} alt="sarah johson image" className="size-12 rounded-full" />
+      <img src={review} alt="sarah johson image" className="size-6 rounded-full" />
         <div>
             <h3>Sarah Johnson</h3>
             <div className="icons flex gap-1 text-yellow-400">    

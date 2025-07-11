@@ -77,7 +77,7 @@ onSubmit : submit
     <>
  <div className="Login min-h-screen py-10  flex justify-center items-center">
  <div className="container gap-5 grid lg:grid-cols-2 lg:gap-12">
- <div className="relative  flex flex-col justify-center items-center min-h-90">
+ <div className="relative  flex flex-col justify-center items-center min-h-70 md:min-h-90">
  <Lottie animationData={animation} loop={false}  style={{ width: "90%", height: "23rem" }} />
 </div>
 
