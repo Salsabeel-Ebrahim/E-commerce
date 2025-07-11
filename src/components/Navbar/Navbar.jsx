@@ -62,8 +62,8 @@ export default function Navbar() {
                     <div className="items-center flex gap-3">
                       {!token && (
                         <div>
-                          <NavLink to="/signup" className="block border-b border-gray-200 px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-100 hover:text-mainColor transition duration-200">Signup</NavLink>
-                          <NavLink to="/login" className="block border-b border-gray-200 px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-100 hover:text-mainColor transition duration-200">Login</NavLink>
+                          <NavLink to="/signup" className="inline border-b  px-3 py-2 text-base font-medium text-gray-800  hover:text-mainColor transition duration-200">Signup</NavLink>
+                          <NavLink to="/login" className="inline border-b  px-3 py-2 text-base font-medium text-gray-800  hover:text-mainColor transition duration-200">Login</NavLink>
                         </div>
                       )}
 
