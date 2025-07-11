@@ -41,8 +41,8 @@ async function online(values){
     shippingAddress : values }
      const options ={
 
-        url:`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartInfo?.cartId}?url=http://localhost:5173` , 
-
+        url:`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartInfo?.cartId}?url=https://github.com/Salsabeel-Ebrahim/E-commerce` , 
+  //  http://localhost:5173
         method :"POST" ,
         headers :{
           token 
