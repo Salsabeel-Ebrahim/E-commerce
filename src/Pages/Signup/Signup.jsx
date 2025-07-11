@@ -95,7 +95,7 @@ navigate("/login")
             <div className="features">
               <ul className="*:flex *:items-center *:gap-3 space-y-4">
 <li className="">
-  <div className="icon size-12 rounded-full bg-green-200 text-xl flex justify-center items-center text-green-600">
+  <div className="icon size-6 md:size-12 rounded-full bg-green-200 text-xl flex justify-center items-center text-green-600">
     <FontAwesomeIcon className="" icon={faStar} />
   </div>
   <div className="content">
@@ -105,7 +105,7 @@ navigate("/login")
 </li>
 
 <li className="">
-  <div className="icon size-12 rounded-full bg-green-200 text-xl flex justify-center items-center text-green-600">
+  <div className="icon size-6 md:size-12 rounded-full bg-green-200 text-xl flex justify-center items-center text-green-600">
     <FontAwesomeIcon className="" icon={faTruckFast} />
   </div>
   <div className="content">
@@ -115,7 +115,7 @@ navigate("/login")
 </li>
 
 <li className="">
-  <div className="icon size-12 rounded-full bg-green-200 text-xl flex justify-center items-center text-green-600">
+  <div className="icon size-6 md:size-12 rounded-full bg-green-200 text-xl flex justify-center items-center text-green-600">
     <FontAwesomeIcon className="" icon={faShieldHalved} />
   </div>
   <div className="content">
