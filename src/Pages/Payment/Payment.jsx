@@ -40,8 +40,13 @@ async function online(values){
    const test = {
     shippingAddress : values }
      const options ={
+<<<<<<< HEAD
         url:`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartInfo?.cartId}?url=https://salsabeel-ebrahim.github.io/E-commerce/` , 
         
+=======
+        url:`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartInfo?.cartId}?url=http://localhost:5173` , 
+        // https://salsabeel-ebrahim.github.io/E-commerce/
+>>>>>>> cca8dba (fix: adjusted paths, fonts, and Vercel base config)
 
         method :"POST" ,
         headers :{

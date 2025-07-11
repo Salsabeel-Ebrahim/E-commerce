@@ -2,22 +2,19 @@
   "name": "freshcart",
   "private": true,
   "version": "0.0.0",
-
-  "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist -r https://github.com/Salsabeel-Ebrahim/E-commerce.git"
-
-
-  
-},
-
-  "homepage": "https://Salsabeel-Ebrahim.github.io/E-commerce",
+"homepage": "",
 
   "type": "module",
- 
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "update": "npm run build && npm run deploy"
+  },
+
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.6",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
