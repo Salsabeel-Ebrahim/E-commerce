@@ -49,15 +49,14 @@ export default function Navbar() {
                 <div className="absolute top-full left-0 w-screen bg-white shadow-md z-40 py-2 space-y-1" id="mobile-menu">
                   {/* Top icons and auth */}
                   <div className="container flex justify-between px-8 ">
-                    {
-                      token &&
+                    
                           <div className="social-icons items-center flex gap-3 mt-4">
                       <FontAwesomeIcon icon={faFacebook} className="text-xl text-[#1877F2] hover:translate-y-[-4px] transition-transform duration-300" />
                       <FontAwesomeIcon icon={faInstagram} className="text-xl text-[#E1306C] hover:translate-y-[-4px] transition-transform duration-300" />
                       <FontAwesomeIcon icon={faTwitter} className="text-xl text-[#1DA1F2] hover:translate-y-[-4px] transition-transform duration-300" />
                       <FontAwesomeIcon icon={faLinkedin} className="text-xl text-[#0077B5] hover:translate-y-[-4px] transition-transform duration-300" />
                     </div>
-                    }
+                    
                 
 
                     <div className="items-center flex gap-3">
@@ -114,14 +113,14 @@ export default function Navbar() {
           <div className="hidden  lg:flex h-16 justify-between w-full items-center px-4 md:px-6">
                <div className="flex items-center gap-2 justify-between w-full">
               <img className="h-8 w-auto" src={logo} alt="Fresh cart logo" />
-         
-            <div className="flex justify-center items-center  gap-3 ">
+         {token &&      <div className="flex justify-center items-center  gap-3 ">
               <NavLink to="/" className="px-3 py-2 text-sm font-medium">Home</NavLink>
               <NavLink to="/Products" className="px-3 py-2 text-sm font-medium">Products</NavLink>
               <NavLink to="/Categories" className="px-3 py-2 text-sm font-medium">Categories</NavLink>
               <NavLink to="/Brands" className="px-3 py-2 text-sm font-medium">Brands</NavLink>
               <NavLink to="/allorders" className="px-3 py-2 text-sm font-medium">Orders</NavLink>
-            </div>
+            </div>}
+       
 
             <div className="flex items-center gap-3  ">
               <FontAwesomeIcon icon={faFacebook} className="text-xl text-[#1877F2]" />
